@@ -1,18 +1,62 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #292929;
+  background-image: linear-gradient(to bottom right, #00ceba, #b07ed0);
+  background-attachment: fixed;
+}
+
+#pp {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  background-image: url(https://cdn.discordapp.com/attachments/456518660211736577/1041667413130887238/received_484205273034625.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 article {
   background-color: #fbfef9;
-  margin-top: 1em;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9em;
+  margin: 1em;
   padding: 1em;
   border-radius: 0.4em;
 }
 
 .all-movie-cards article img {
-  width: 21em;
+  width: 22em;
   height: auto;
   margin-top: 20px;
+  border-radius: 0.4em;
+}
+
+.all-movie-cards article h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+#synopsis {
+  max-width: 90%;
+}
+
+#card-genre {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  align-items: stretch;
+  height: 24px;
+  margin-top: -20px;
+}
+#card-genre-sub {
+  height: 24px;
+  border-radius: 8px;
+  margin-left: 4px;
+  background-color: rgb(148, 145, 160);
+  overflow: hidden;
+  /* p {
+       margin-top: 2px;
+       margin-left: 4px;
+       margin-right: 4px;
+   }*/
 }/*# sourceMappingURL=style.css.map */

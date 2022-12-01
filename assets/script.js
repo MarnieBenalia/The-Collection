@@ -4,7 +4,7 @@ const moviearray = [
         sortie: '1995',
         réalisateur: 'Mamoru Oshii',
         genre:['Animation', 'Science-fiction'],
-        synopsis: 'Le major Motoko Kusanagi et son collègue Batou, deux cyborgs, travaillent dans l\'unité spéciale anti-terroriste du gouvernement de New Port City au Japon. Au cours d\'une de leurs enquêtes, ils sont chargés de capturer un redoutable pirate informatique, insaisissable, connu seulement par son pseudonyme de «Puppet Master»',
+        synopsis: 'Le major Motoko Kusanagi et son collègue Batou, deux cyborgs, travaillent dans l\'unité spéciale anti-terroriste du gouvernement de New Port City au Japon. Au cours d\'une de leurs enquêtes, ils sont chargés de capturer un redoutable pirate informatique.',
         trailer: 'https://www.youtube.com/watch?v=ZYYnfISC5f4',
         pictureUrl: 'https://image.tmdb.org/t/p/original/cJDJlZCmaRDT7ODedZyOJwavp42.jpg',
     },
@@ -60,7 +60,7 @@ const moviearray = [
         sortie: '2006',
         réalisateur: 'Alfonso Cuarón ',
         genre:['post-apocalyptique', 'Drame'],
-        synopsis: 'En 2027, aucun enfant n\'est venu au monde depuis près de vingt ans. Theo Faron, un ancien militant idéaliste, est contacté par Julian, son ex-épouse, qui lui demande d\'obtenir des papiers pour une jeune femme d\'origine africaine et de l\'escorter jusqu\'à un endroit sûr. En chemin, Theo découvre que celle-ci est enceinte et qu\'il est impératif de la mettre à l\'abri avec son enfant, seul espoir de l\'humanité.',
+        synopsis: 'En 2027, aucun enfant n\'est venu au monde depuis près de vingt ans. Theo Faron, un ancien militant idéaliste, est contacté par Julian, son ex-épouse, qui lui demande d\'obtenir des papiers pour une jeune femme et de l\'escorter jusqu\'à un endroit sûr. En chemin, Theo découvre que celle-ci est enceinte et qu\'il est impératif de la mettre à l\'abri avec son enfant, seul espoir de l\'humanité.',
         trailer: 'https://www.youtube.com/watch?v=2VT2apoX90o',
         pictureUrl: 'http://fr.web.img4.acsta.net/medias/nmedia/18/36/31/42/18674404.jpg',
     
@@ -108,9 +108,9 @@ const moviearray = [
         trailer: 'https://www.youtube.com/watch?v=5ftmr17M-a4',
         pictureUrl: 'https://media.senscritique.com/media/000011349635/source_big/The_Thing.jpg',
     
-    },
-    
+    },    
 ]
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 let htmlCode = ``;
 
@@ -119,7 +119,6 @@ moviearray.forEach(function(singleMovieObjects) {
   htmlCode =
     htmlCode +
     `
-
     <article>
 
       <div>
@@ -127,13 +126,12 @@ moviearray.forEach(function(singleMovieObjects) {
       </div>
       <div>
 
-        <h3>Title: ${singleMovieObjects.title}</h3>
-
-            <p>Sortie: ${singleMovieObjects.sortie}</p>
-            <p>réalisateur: ${singleMovieObjects.réalisateur}</p>
-            <p class="card-genre">genre: ${singleMovieObjects.genre}</p>
-            <p>synopsis: ${singleMovieObjects.synopsis}</p>
-            <p>trailer: ${singleMovieObjects.trailer}</p>
+            <p class="card-genre">${singleMovieObjects.genre}</p>
+            <h3>${singleMovieObjects.title}</h3>
+            <p>${singleMovieObjects.sortie}</p>
+            <p> ${singleMovieObjects.réalisateur}</p>
+            <p class="synopsis">${singleMovieObjects.synopsis}</p>
+            <a href="${singleMovieObjects.trailer}"><svg xmlns="http://www.w3.org/2000/svg" width="5em"viewBox="0 0 700 700"><path d="M366.2 166.655a183.754 183.754 0 0 0-195.277 195.283c5.78 91.437 79.98 165.631 171.418 171.407a183.753 183.753 0 0 0 195.276-195.283c-5.78-91.439-79.978-165.632-171.418-171.407z" style="fill:#fff"/><path d="M593.973 101.065H106.027A81.265 81.265 0 0 0 25 182.092v335.816a81.265 81.265 0 0 0 81.027 81.027h487.946A81.265 81.265 0 0 0 675 517.908V182.092a81.265 81.265 0 0 0-81.027-81.027zm-251.632 432.28c-91.437-5.776-165.638-79.97-171.418-171.407A183.754 183.754 0 0 1 366.2 166.655c91.44 5.775 165.637 79.968 171.418 171.407A183.753 183.753 0 0 1 342.34 533.345z" style="fill:#ff4747"/><path d="M481.685 347.31a2.97 2.97 0 0 0-2.87-2.189 2.988 2.988 0 0 0-1.33.312l-53.028 33.816v-35.943a8.565 8.565 0 0 0-8.54-8.54h-5.952a47.42 47.42 0 1 0-68.744-53.211 47.55 47.55 0 1 0-68.743 53.21H262.06a8.565 8.565 0 0 0-8.54 8.541V445.71a8.565 8.565 0 0 0 8.54 8.54h153.855a8.565 8.565 0 0 0 8.54-8.54v-54.75l27.507 17.539 25.523 16.275a3.022 3.022 0 0 0 2.892-.13 2.955 2.955 0 0 0 1.411-2.517V348.08a2.921 2.921 0 0 0-.104-.772zm-94.319-75.6a21.391 21.391 0 1 1-21.493 21.391 21.442 21.442 0 0 1 21.493-21.39zm-46.145 32.938a47.415 47.415 0 0 0 19.958 27.982h-39.917a47.42 47.42 0 0 0 19.959-27.982zm-46.146-32.938a21.391 21.391 0 1 1-21.493 21.391 21.442 21.442 0 0 1 21.493-21.39z" style="fill:#ff4747"/></svg></a>
       </div>
 
     </article>`
@@ -142,3 +140,8 @@ moviearray.forEach(function(singleMovieObjects) {
 const movieCards = document.querySelector(".all-movie-cards");
 
 movieCards.innerHTML = htmlCode;
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700"><path d="M366.2 166.655a183.754 183.754 0 0 0-195.277 195.283c5.78 91.437 79.98 165.631 171.418 171.407a183.753 183.753 0 0 0 195.276-195.283c-5.78-91.439-79.978-165.632-171.418-171.407z" style="fill:#fff"/><path d="M593.973 101.065H106.027A81.265 81.265 0 0 0 25 182.092v335.816a81.265 81.265 0 0 0 81.027 81.027h487.946A81.265 81.265 0 0 0 675 517.908V182.092a81.265 81.265 0 0 0-81.027-81.027zm-251.632 432.28c-91.437-5.776-165.638-79.97-171.418-171.407A183.754 183.754 0 0 1 366.2 166.655c91.44 5.775 165.637 79.968 171.418 171.407A183.753 183.753 0 0 1 342.34 533.345z" style="fill:#ff4747"/><path d="M481.685 347.31a2.97 2.97 0 0 0-2.87-2.189 2.988 2.988 0 0 0-1.33.312l-53.028 33.816v-35.943a8.565 8.565 0 0 0-8.54-8.54h-5.952a47.42 47.42 0 1 0-68.744-53.211 47.55 47.55 0 1 0-68.743 53.21H262.06a8.565 8.565 0 0 0-8.54 8.541V445.71a8.565 8.565 0 0 0 8.54 8.54h153.855a8.565 8.565 0 0 0 8.54-8.54v-54.75l27.507 17.539 25.523 16.275a3.022 3.022 0 0 0 2.892-.13 2.955 2.955 0 0 0 1.411-2.517V348.08a2.921 2.921 0 0 0-.104-.772zm-94.319-75.6a21.391 21.391 0 1 1-21.493 21.391 21.442 21.442 0 0 1 21.493-21.39zm-46.145 32.938a47.415 47.415 0 0 0 19.958 27.982h-39.917a47.42 47.42 0 0 0 19.959-27.982zm-46.146-32.938a21.391 21.391 0 1 1-21.493 21.391 21.442 21.442 0 0 1 21.493-21.39z" style="fill:#ff4747"/></svg>*/
