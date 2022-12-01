@@ -1,1 +1,18 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #292929;
+}
+
+article {
+  background-color: #fbfef9;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 0.4em;
+}
+
+.all-movie-cards article img {
+  width: 21em;
+  height: auto;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -5,3 +5,23 @@
 @import './scss/_variables';
 // pour importer un élément: $exemplecouleur
 
+body{
+    margin:0;
+    padding: 0;
+    background-color: $gris-classique;
+    
+
+}
+article{
+    background-color: $fond-clair;
+    margin-top: 1em;
+    padding:1em;
+    border-radius: 0.4em;
+}
+
+.all-movie-cards article img {
+    width: 21em;
+    height: auto;
+    margin-top: 20px;
+  }
+  
