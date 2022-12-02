@@ -36,7 +36,7 @@ const moviearray = [
     {
         title: 'Ghostland ',
         sortie: '2018',
-        réalisateur: 'Hayao Miyazaki',
+        réalisateur: 'Pascal Laugier',
         genre:['Epouvante-horreur'],
         synopsis: 'Suite au décès de sa tante, Colleen et ses deux filles héritent d’une maison. Mais dès la première nuit, des meurtriers pénètrent dans la demeure et Colleen doit se battre pour sauver ses filles.',
         trailer: 'https://www.youtube.com/watch?v=DyRSYcurNJw',
@@ -70,7 +70,7 @@ const moviearray = [
         title: 'La La Land ',
         sortie: '2016',
         réalisateur: 'Damien Chazelle',
-        genre:['Comédie musicale', 'Romance'],
+        genre:['Comédie musicale','Romance'],
         synopsis: 'Au cœur de Los Angeles, une actrice en devenir prénommée Mia sert des cafés entre deux auditions. De son côté, Sebastian, passionné de jazz, joue du piano dans des clubs miteux pour assurer sa subsistance. Tous deux sont bien loin de la vie rêvée à laquelle ils aspirent…Le destin va réunir ces doux rêveurs, mais leur coup de foudre résistera-t-il aux tentations, aux déceptions, et à la vie trépidante d’Hollywood ?',
         trailer: 'https://www.youtube.com/watch?v=0pdqf4P9MB8',
         pictureUrl: 'https://filmspot.com.pt/images/filmes/posters/big/313369_pt.jpg',
@@ -124,9 +124,8 @@ moviearray.forEach(function(singleMovieObjects) {
       <div>
         <img src="${singleMovieObjects.pictureUrl}" alt="${singleMovieObjects.imageAlt}">
       </div>
-      <div>
-
-            <p class="card-genre">${singleMovieObjects.genre}</p>
+      <div class="text">
+            <p class="genre">${singleMovieObjects.genre}</p>
             <h3>${singleMovieObjects.title}</h3>
             <p>${singleMovieObjects.sortie}</p>
             <p> ${singleMovieObjects.réalisateur}</p>

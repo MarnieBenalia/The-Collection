@@ -36,27 +36,31 @@ article {
   font-family: "Oswald", sans-serif;
 }
 
-#synopsis {
-  max-width: 90%;
+.synopsis {
+  max-width: 95%;
 }
 
-#card-genre {
-  display: flex;
-  flex-direction: row;
-  flex-flow: nowrap;
-  align-items: stretch;
-  height: 24px;
-  margin-top: -20px;
+.genre {
+  background-color: #8bfff3;
+  padding: 0.2em;
+  border-radius: 1em;
+  text-align: center;
 }
-#card-genre-sub {
-  height: 24px;
-  border-radius: 8px;
-  margin-left: 4px;
-  background-color: rgb(148, 145, 160);
-  overflow: hidden;
-  /* p {
-       margin-top: 2px;
-       margin-left: 4px;
-       margin-right: 4px;
-   }*/
+
+@media screen and (min-width: 1023px) {
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80em;
+    height: auto;
+    margin: 5em;
+    padding: 1em;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */
